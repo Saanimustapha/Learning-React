@@ -3,6 +3,9 @@ import { ClickButton } from './Button'
 // import { ContactForm } from './ContactForm'
 import { StyledForm } from './StyledForm'
 import { Product } from './Product'
+import { Greeting } from './Greeting'
+import { UserCard } from './UserCard'
+import { CardWrapper } from './CardWrapper'
 import './App.css'
 
 
@@ -10,6 +13,15 @@ function App() {
 
   return (
     <>
+    <CardWrapper title = "Book"/>
+    <p>Bood title</p>
+    <p>Number of pages</p>
+    <CardWrapper/>
+    <UserCard name="saani" age="25" city="accra"/>
+    <Greeting person='Bruce' message='Hi'/>
+    <Greeting person='Clark'/>
+    <Greeting message='Whats up'/>
+    <Greeting/>
     <Product name="Laptop" price={899} instock={true}/>
     <Product name="Phone" price={234} instock={false}/>
     <h1>This a react tutorial</h1>
