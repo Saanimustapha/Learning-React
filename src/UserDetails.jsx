@@ -1,20 +1,14 @@
 //conditional rendering using if statements
 
-export const UserDetails = ({name, isOnline}) => {
+//Improving conditional rendering using ternary operator
 
-    if (isOnline) {
-        return (
-            <>
-            <h3>{name}</h3>
-            <span>Status: Online</span>
-            </>
-        )
-    }
+export const UserDetails = ({name, isOnline,isPremium}) => {
 
     return (
         <>
         <h3>{name}</h3>
-        <span>Status: Offline</span>
+        <span>Status: {isOnline? "Is Available" : "Not Available"}</span>
+        <p>{isPremium && <span>Access all features!!</span>}</p>
         </>
     )
 }

@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-    <UserDetails name="Bruce wayne" isOnline={true}/>
-    <UserDetails name="Bruce wayne" isOnline={false}/>
+    <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
+    <UserDetails name="Bruce wayne" isOnline={false} isPremium={false}/>
     <CardWrapper title = "Book"/>
     <p>Bood title</p>
     <p>Number of pages</p>
