@@ -7,6 +7,7 @@ import { Greeting } from './Greeting'
 import { UserCard } from './UserCard'
 import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
+import { ProductList } from './ProductList'
 import './App.css'
 
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+    <ProductList/>
     <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
     <UserDetails name="Bruce wayne" isOnline={false} isPremium={false}/>
     <CardWrapper title = "Book"/>
