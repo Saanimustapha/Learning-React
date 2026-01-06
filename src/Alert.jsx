@@ -1,8 +1,8 @@
 //External styling of react components
-import './Alert.css'
+import style from './Alert.module.css'
 
 export const Alert = ({children, type}) => {
     return (
-        <div className={`alert ${type}`}>{children}</div>
+        <div className={`${style.alert} ${style[type]}`}>{children}</div>
     )
 }
