@@ -8,6 +8,7 @@ import { UserCard } from './UserCard'
 import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
 import { ProductList } from './ProductList'
+import { Alert } from './Alert'
 import './App.css'
 
 
@@ -15,6 +16,8 @@ function App() {
 
   return (
     <>
+    <Alert>Info successfully submitted</Alert>
+    <Alert type="error">Something went wrong</Alert>
     <ProductList/>
     <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
     <UserDetails name="Bruce wayne" isOnline={false} isPremium={false}/>
