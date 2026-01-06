@@ -1,13 +1,8 @@
-//Inline styling of react components
+//External styling of react components
+import './Alert.css'
 
-export const Alert = ({children, type="success"}) => {
+export const Alert = ({children, type}) => {
     return (
-        <div style={{
-            backgroundColor: type === "success" ? "#10b981" : "#ef4444",
-            color: "black",
-            padding: "20px",
-            marginBottom: "25px",
-            borderRadius: "5px"
-        }}>{children}</div>
+        <div className={`alert ${type}`}>{children}</div>
     )
 }

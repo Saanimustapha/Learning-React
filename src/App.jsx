@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-    <Alert>Info successfully submitted</Alert>
+    <Alert type="success">Info successfully submitted</Alert>
     <Alert type="error">Something went wrong</Alert>
     <ProductList/>
     <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
