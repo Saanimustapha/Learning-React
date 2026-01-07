@@ -1,5 +1,5 @@
 import { Welcome } from './Welcome'
-import { ClickButton } from './Button'
+import { Button } from './Button'
 // import { ContactForm } from './ContactForm'
 import { StyledForm } from './StyledForm'
 import { Product } from './Product'
@@ -9,6 +9,9 @@ import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
 import { ProductList } from './ProductList'
 import { Alert } from './Alert'
+import { Menu } from './Menu'
+import { UserForm } from './UserForm'
+import { Counter } from './Counter'
 import './App.css'
 
 
@@ -16,6 +19,10 @@ function App() {
 
   return (
     <>
+    <Counter/>
+    <Menu/>
+    <UserForm/>
+    <Button/>
     <Alert type="success">Info successfully submitted</Alert>
     <Alert type="error">Something went wrong</Alert>
     <ProductList/>
@@ -36,7 +43,6 @@ function App() {
     {/* <Welcome name="Bruce" alias="batman"/>
     <Welcome name="Clark" alias="superman"/> */}
     <StyledForm/>
-    <ClickButton/>
     </>
   )
 }

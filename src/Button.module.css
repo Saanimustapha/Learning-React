@@ -1,0 +1,19 @@
+.but {
+  background-color: red;
+  color: black; /* default text color */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  /* smooth transition */
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.but:hover {
+  color: #9acd32; 
+  
+  /* box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
