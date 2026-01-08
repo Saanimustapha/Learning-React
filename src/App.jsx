@@ -12,6 +12,8 @@ import { Alert } from './Alert'
 import { Menu } from './Menu'
 import { UserForm } from './UserForm'
 import { Counter } from './Counter'
+import { LoginCard } from './LoginCard'
+import { Message } from './Message'
 import './App.css'
 
 
@@ -19,6 +21,8 @@ function App() {
 
   return (
     <>
+    <Message/>
+    <LoginCard/>
     <Counter/>
     <Menu/>
     <UserForm/>
