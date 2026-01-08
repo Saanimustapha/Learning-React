@@ -14,6 +14,7 @@ import { UserForm } from './UserForm'
 import { Counter } from './Counter'
 import { LoginCard } from './LoginCard'
 import { Message } from './Message'
+import { SimpleCounter } from './SimpleCounter'
 import './App.css'
 
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+    <SimpleCounter/>
     <Message/>
     <LoginCard/>
     <Counter/>
