@@ -16,6 +16,7 @@ import { LoginCard } from './LoginCard'
 import { Message } from './Message'
 import { SimpleCounter } from './SimpleCounter'
 import { SimpleCounterTwo } from './SimpleCounterTwo'
+import { BatchUpdate } from './BatchUpdate'
 import './App.css'
 
 
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+    <BatchUpdate/>
     <SimpleCounterTwo/>
     <SimpleCounter/>
     <Message/>
