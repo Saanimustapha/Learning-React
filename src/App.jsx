@@ -17,6 +17,7 @@ import { Message } from './Message'
 import { SimpleCounter } from './SimpleCounter'
 import { SimpleCounterTwo } from './SimpleCounterTwo'
 import { BatchUpdate } from './BatchUpdate'
+import { UserProfile } from './UserProfile'
 import './App.css'
 
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+    <UserProfile/>
     <BatchUpdate/>
     <SimpleCounterTwo/>
     <SimpleCounter/>
