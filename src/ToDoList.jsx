@@ -15,6 +15,11 @@ export const ToDoList = () => {
         setItems(newItems)
     }
 
+    const removeItem = (id) => {
+        const newItems = items.filter((item) => item.id != id)
+        setItems(newItems)
+    }
+
 
 
     return (
@@ -28,6 +33,7 @@ export const ToDoList = () => {
                         return (
                         <li key={item.id}>
                             {item.text}
+                            <button onClick={() => removeItem(item.id)}>Remove Item</button>
                         </li>
                         )
                     })
