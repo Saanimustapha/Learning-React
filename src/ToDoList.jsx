@@ -10,6 +10,12 @@ export const ToDoList = () => {
     )
 
 
+    const addItem = (e) => {
+        const newItems = [...items, {id:Date.now, text:"Fourth Item"}];
+        setItems(newItems)
+    }
+
+
 
     return (
         <>
@@ -28,6 +34,7 @@ export const ToDoList = () => {
                 }
             </ul>
         </div>
+        <button onClick={addItem}>Add Item</button>
         </>
 
     )
