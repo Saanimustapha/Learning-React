@@ -18,6 +18,7 @@ import { SimpleCounter } from './SimpleCounter'
 import { SimpleCounterTwo } from './SimpleCounterTwo'
 import { BatchUpdate } from './BatchUpdate'
 import { UserProfile } from './UserProfile'
+import { ToDoList } from './ToDoList'
 import './App.css'
 
 
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+    <ToDoList/>
     <UserProfile/>
     <BatchUpdate/>
     <SimpleCounterTwo/>
