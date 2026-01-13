@@ -5,14 +5,16 @@ export const ShoppingCart = () => {
     const [cartItems, setCartItems] = useState(
         {
             reactCourse:0,
-            vueCourse:0
+            vueCourse:0,
+            angularCourse:0
         }
     )
 
     const [prices,setPrices] = useState(
         {
             reactCourse:9.99,
-            vueCourse:15.99
+            vueCourse:15.99,
+            angularCourse:12.99
         }
     )
 
@@ -22,6 +24,10 @@ export const ShoppingCart = () => {
 
     const onAddVueCourse = () => {
         setCartItems({...cartItems,vueCourse:cartItems.vueCourse + 1})
+    }
+
+    const onAddAngularCourse = () => {
+        setCartItems({...cartItems,angularCourse:cartItems.angularCourse+1})
     }
 
 
@@ -38,6 +44,12 @@ export const ShoppingCart = () => {
         quantity={cartItems.vueCourse}
         price={prices.vueCourse}
         onAddToCart={onAddVueCourse}
+        />
+        <ProductCard
+        name="Angular Course"
+        quantity={cartItems.angularCourse}
+        price={prices.angularCourse}
+        onAddToCart={onAddAngularCourse}
         />
         <CartItems cartItems={cartItems} prices={prices}/>
         </>
