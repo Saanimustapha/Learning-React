@@ -20,6 +20,7 @@ import { BatchUpdate } from './BatchUpdate'
 import { UserProfile } from './UserProfile'
 import { ToDoList } from './ToDoList'
 import { ShoppingCart } from './ShoppingCart'
+import { Courses } from './Courses'
 import './App.css'
 
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <>
+    <Courses/>
     <ShoppingCart/>
     <ToDoList/>
     <UserProfile/>
