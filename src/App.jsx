@@ -21,6 +21,7 @@ import { UserProfile } from './UserProfile'
 import { ToDoList } from './ToDoList'
 import { ShoppingCart } from './ShoppingCart'
 import { Courses } from './Courses'
+import { ReducerCounter } from './ReducerCounter'
 import './App.css'
 
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+    <ReducerCounter/>
     <Courses/>
     <ShoppingCart/>
     <ToDoList/>
