@@ -22,6 +22,7 @@ import { ToDoList } from './ToDoList'
 import { ShoppingCart } from './ShoppingCart'
 import { Courses } from './Courses'
 import { ReducerCounter } from './ReducerCounter'
+import { ReducerShoppingCart } from './ReducerShoppingCart'
 import './App.css'
 
 
@@ -29,7 +30,8 @@ function App() {
 
   return (
     <>
-    <ReducerCounter/>
+    <ReducerShoppingCart/>
+    {/* <ReducerCounter/>
     <Courses/>
     <ShoppingCart/>
     <ToDoList/>
@@ -62,7 +64,7 @@ function App() {
     <h1>This a react tutorial</h1>
     {/* <Welcome name="Bruce" alias="batman"/>
     <Welcome name="Clark" alias="superman"/> */}
-    <StyledForm/>
+    {/* <StyledForm/> */} 
     </>
   )
 }
