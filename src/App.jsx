@@ -23,6 +23,7 @@ import { ShoppingCart } from './ShoppingCart'
 import { Courses } from './Courses'
 import { ReducerCounter } from './ReducerCounter'
 import { ReducerShoppingCart } from './ReducerShoppingCart'
+import { SimpleCounterWithInit } from './SimpleCounterWithInit'
 import './App.css'
 
 
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+    <SimpleCounterWithInit/>
     <ReducerShoppingCart/>
     {/* <ReducerCounter/>
     <Courses/>
