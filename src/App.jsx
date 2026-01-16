@@ -24,15 +24,24 @@ import { Courses } from './Courses'
 import { ReducerCounter } from './ReducerCounter'
 import { ReducerShoppingCart } from './ReducerShoppingCart'
 import { SimpleCounterWithInit } from './SimpleCounterWithInit'
+import { Header } from './Header'
 import './App.css'
 
 
 function App() {
 
+  const user = {
+    name: "Bruce Wayne",
+    age: 30,
+    isPremium: true
+  }
+
   return (
     <>
-    <SimpleCounterWithInit/>
-    <ReducerShoppingCart/>
+    <h1>Dashboard</h1>
+    <Header name={user.name}/>
+    {/* <SimpleCounterWithInit/>
+    <ReducerShoppingCart/> */}
     {/* <ReducerCounter/>
     <Courses/>
     <ShoppingCart/>
