@@ -25,6 +25,7 @@ import { ReducerCounter } from './ReducerCounter'
 import { ReducerShoppingCart } from './ReducerShoppingCart'
 import { SimpleCounterWithInit } from './SimpleCounterWithInit'
 import { Header } from './Header'
+import { UserContext } from './UserContext'
 import './App.css'
 
 
@@ -37,46 +38,48 @@ function App() {
   }
 
   return (
-    <>
+    
+    <UserContext value={user}>
     <h1>Dashboard</h1>
-    <Header name={user.name}/>
-    {/* <SimpleCounterWithInit/>
-    <ReducerShoppingCart/> */}
-    {/* <ReducerCounter/>
-    <Courses/>
-    <ShoppingCart/>
-    <ToDoList/>
-    <UserProfile/>
-    <BatchUpdate/>
-    <SimpleCounterTwo/>
-    <SimpleCounter/>
-    <Message/>
-    <LoginCard/>
-    <Counter/>
-    <Menu/>
-    <UserForm/>
-    <Button/>
-    <Alert type="success">Info successfully submitted</Alert>
-    <Alert type="error">Something went wrong</Alert>
-    <ProductList/>
-    <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
-    <UserDetails name="Bruce wayne" isOnline={false} isPremium={false}/>
-    <CardWrapper title = "Book"/>
-    <p>Bood title</p>
-    <p>Number of pages</p>
-    <CardWrapper/>
-    <UserCard name="saani" age="25" city="accra"/>
-    <Greeting person='Bruce' message='Hi'/>
-    <Greeting person='Clark'/>
-    <Greeting message='Whats up'/>
-    <Greeting/>
-    <Product name="Laptop" price={899} instock={true}/>
-    <Product name="Phone" price={234} instock={false}/>
-    <h1>This a react tutorial</h1>
-    {/* <Welcome name="Bruce" alias="batman"/>
-    <Welcome name="Clark" alias="superman"/> */}
-    {/* <StyledForm/> */} 
-    </>
+    <Header/>
+    </UserContext>
+
+    // {/* <SimpleCounterWithInit/>
+    // <ReducerShoppingCart/> */}
+    // {/* <ReducerCounter/>
+    // <Courses/>
+    // <ShoppingCart/>
+    // <ToDoList/>
+    // <UserProfile/>
+    // <BatchUpdate/>
+    // <SimpleCounterTwo/>
+    // <SimpleCounter/>
+    // <Message/>
+    // <LoginCard/>
+    // <Counter/>
+    // <Menu/>
+    // <UserForm/>
+    // <Button/>
+    // <Alert type="success">Info successfully submitted</Alert>
+    // <Alert type="error">Something went wrong</Alert>
+    // <ProductList/>
+    // <UserDetails name="Bruce wayne" isOnline={true} isPremium={true}/>
+    // <UserDetails name="Bruce wayne" isOnline={false} isPremium={false}/>
+    // <CardWrapper title = "Book"/>
+    // <p>Bood title</p>
+    // <p>Number of pages</p>
+    // <CardWrapper/>
+    // <UserCard name="saani" age="25" city="accra"/>
+    // <Greeting person='Bruce' message='Hi'/>
+    // <Greeting person='Clark'/>
+    // <Greeting message='Whats up'/>
+    // <Greeting/>
+    // <Product name="Laptop" price={899} instock={true}/>
+    // <Product name="Phone" price={234} instock={false}/>
+    // <h1>This a react tutorial</h1>
+    // {/* <Welcome name="Bruce" alias="batman"/>
+    // <Welcome name="Clark" alias="superman"/> */}
+    // {/* <StyledForm/> */} 
   )
 }
 

@@ -1,11 +1,11 @@
 import { Avatar } from "./Avatar"
 
-export const NewMenu = ({name}) => {
+export const NewMenu = () => {
 
     return (
         <div>
             Menu Component
-            <Avatar name={name}/>
+            <Avatar/>
         </div>
     )
 }

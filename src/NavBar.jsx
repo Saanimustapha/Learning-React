@@ -1,11 +1,11 @@
 import { NewMenu } from "./NewMenu"
 
-export const NavBar = ({name}) => {
+export const NavBar = () => {
 
     return (
         <nav>
             <h2>NavBar Component</h2>
-            <NewMenu name={name}/>
+            <NewMenu/>
         </nav>
     )
 }

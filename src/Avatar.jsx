@@ -1,8 +1,12 @@
-export const Avatar = ({name}) => {
+import { useContext } from "react"
+import { UserContext } from "./UserContext"
 
+export const Avatar = () => {
+
+    const user = useContext(UserContext)
     return (
         <div>
-            Welcome!!...{name}
+            Welcome!!...{user.name}
         </div>
     )
 }
