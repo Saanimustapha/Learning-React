@@ -25,24 +25,22 @@ import { ReducerCounter } from './ReducerCounter'
 import { ReducerShoppingCart } from './ReducerShoppingCart'
 import { SimpleCounterWithInit } from './SimpleCounterWithInit'
 import { Header } from './Header'
-import { UserContext } from './UserContext'
+import { CustomContextProvider } from './CustomContextProvider'
 import './App.css'
 
 
 function App() {
 
-  const user = {
-    name: "Bruce Wayne",
-    age: 30,
-    isPremium: true
-  }
 
   return (
     
-    <UserContext value={user}>
-    <h1>Dashboard</h1>
-    <Header/>
-    </UserContext>
+    <CustomContextProvider>
+      <div>
+            <h1>Dashboard</h1>
+            <Header/>
+      </div>
+    </CustomContextProvider>
+
 
     // {/* <SimpleCounterWithInit/>
     // <ReducerShoppingCart/> */}

@@ -3,10 +3,22 @@ import { UserContext } from "./UserContext"
 
 export const Avatar = () => {
 
-    const user = useContext(UserContext)
+    const {user, setUser} = useContext(UserContext)
+
+    const toggleTheme = () => {
+        setUser(
+            {
+                ...user,
+                theme: user.theme==="dark"? "light" : "dark"
+            }
+        )
+    }
+
     return (
         <div>
-            Welcome!!...{user.name}
+            <p>Welcome!!...{user.name}</p>
+            <p>Theme: {user.theme}</p>
+            <button onClick={() => toggleTheme()}>Toggle Theme</button>
         </div>
     )
 }
