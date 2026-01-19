@@ -28,6 +28,7 @@ import { Header } from './Header'
 import { CustomContextProvider } from './CustomContextProvider'
 import { StopWatch } from './StopWatch'
 import './App.css'
+import { FocusInput } from './FocusInput'
 
 
 function App() {
@@ -41,8 +42,10 @@ function App() {
     //         <Header/>
     //   </div>
     // </CustomContextProvider>
-
+    <>
+    <FocusInput/>
     <StopWatch/>
+    </>
 
 
     // {/* <SimpleCounterWithInit/>
