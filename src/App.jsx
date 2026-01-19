@@ -26,6 +26,7 @@ import { ReducerShoppingCart } from './ReducerShoppingCart'
 import { SimpleCounterWithInit } from './SimpleCounterWithInit'
 import { Header } from './Header'
 import { CustomContextProvider } from './CustomContextProvider'
+import { StopWatch } from './StopWatch'
 import './App.css'
 
 
@@ -34,12 +35,14 @@ function App() {
 
   return (
     
-    <CustomContextProvider>
-      <div>
-            <h1>Dashboard</h1>
-            <Header/>
-      </div>
-    </CustomContextProvider>
+    // <CustomContextProvider>
+    //   <div>
+    //         <h1>Dashboard</h1>
+    //         <Header/>
+    //   </div>
+    // </CustomContextProvider>
+
+    <StopWatch/>
 
 
     // {/* <SimpleCounterWithInit/>
